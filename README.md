@@ -205,6 +205,7 @@ n = "Ryan" [3]
 *Segundo ejemplo*
 
 *string_1 = "Camelot"
+
 *string_2 = "place"
 
 *print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
@@ -214,15 +215,103 @@ n = "Ryan" [3]
 ##Segunda forma 
 
 *print "The %s who %s %s!" % ("Knights", "say", "Ni")
+
 *Resultado This will print "The Knights who say Ni!"*
 
 *Segudo ejemplo*
 
 *name = raw_input("What is your name?")
+
 *quest = raw_input("What is your quest?")
+
 *color = raw_input("What is your favorite color?")
 
 *print "Ah, so your name is %s, your quest is %s, " \"and your favorite color is %s." % (name, quest, color)*
+
+#La libreria datetime
+
+*from datetime import datetime
+
+#Obteniendo la actual hora y dia
+
+*from datetime import datetime
+
+*now = datetime.now()
+
+*print now
+
+#Extrayendo informacion
+
+*from datetime import datetime
+
+*now = datetime.now()
+
+*current_year = now.year
+
+*current_month = now.month
+
+*current_day = now.day
+
+*Segundo Ejemplo*
+
+from datetime import datetime
+
+now = datetime.now()
+
+print now
+
+print now.year
+
+print now.month
+
+print now.day
+
+#Imprimiendo Dia en formato legible 
+
+*from datetime import datetime
+
+*now = datetime.now()
+
+*print '%s-%s-%s' % (now.year, now.month, now.day)
+
+*Resultado 2014-02-19*
+
+##Ejemplo 2
+
+from datetime import datetime
+
+now = datetime.now()
+
+print '%s/%s/%s' % (now.month, now.day, now.year)
+
+#Hora Grandiosa
+
+*from datetime import datetime
+
+*now = datetime.now()
+
+*print now.hour
+
+*print now.minute
+
+*print now.second
+
+##Segundo Ejemplo
+
+*from datetime import datetime
+
+*now = datetime.now()
+
+*print '%s:%s:%s' % (now.hour, now.minute, now.second)
+
+*Resultado 5:48:57*
+
+*from datetime import datetime
+
+*now = datetime.now()
+
+*print '%s/%s/%s %s:%s:%s' % (now.month, now.day, now.year, now.hour, now.minute, now.second)
+
 
 
 
