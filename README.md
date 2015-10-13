@@ -388,8 +388,74 @@ not, lo que da lo opuesto a la declaración.
 
 *Not False is True
 
-"""
+#Orden de operaciones
 
+*Operadores booleanos no sólo se evalúan de izquierda a derecha. Al igual que con los operadores aritméticos, hay una orden de operaciones para los operadores booleanos:*
+
+*not* se evalúa primero;
+
+*and* se evalúa siguiente;
+
+*or* se evalúa como ultimo.
+
+#Conditional Statement Syntax
+
+    if 8 < 9:*
+
+    *print "Eight is less than nine!"*
+
+
+#Else
+
+if 8 > 9:
+
+    print "I don't printed!"
+else:
+
+    print "I get printed!"
+    
+#Else if 
+
+if 8 > 9:
+
+    print "I don't get printed!"
+elif 8 < 9:
+
+    print "I get printed!"
+else:
+
+    print "I also don't get printed!"
+    
+#Resumen
+
+##Comparaciones
+
+3 < 4
+
+5 >= 5
+
+10 == 10
+
+12 != 13
+##Boolean operaciones
+
+True or False 
+
+(3 < 4) and (5 >= 5)
+
+this() and not that()
+
+##Condicionales
+
+if this_might_be_true():
+
+    print "This really is true."
+elif that_might_be_true():
+
+    print "That is true."
+else:
+
+    print "None of the above."
 
 
 
