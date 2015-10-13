@@ -312,6 +312,83 @@ print '%s/%s/%s' % (now.month, now.day, now.year)
 
 *print '%s/%s/%s %s:%s:%s' % (now.month, now.day, now.year, now.hour, now.minute, now.second)
 
+#Condicionales y Control de Flujo
+
+*def clinic():
+    print "You've just entered the clinic!"
+    print "Do you take the door on the left or the right?"
+    answer = raw_input("Type left or right and hit 'Enter'.").lower()
+    if answer == "left" or answer == "l":
+        print "This is the Verbal Abuse Room, you heap of parrot droppings!"
+    elif answer == "right" or answer == "r":
+        print "Of course this is the Argument Room, I've told you that already!"
+    else:
+        print "You didn't pick left or right! Try again."
+        clinic()
+
+clinic()
+
+#Comparaciones
+
+##Hay seis comparaciones:
+
+Igual  (==)
+
+Diferente (!=)
+
+Menor que (<)
+
+Menor que o igual que  (<=)
+
+Mayor que (>)
+
+Mayor que o igual que (>=)
+
+
+#Para ser  and/or o no ser
+
+##Hay tres operadores booleanos:
+
+and, lo que comprueba si las dos afirmaciones son ciertas;
+
+or, lo que comprueba si al menos una de las afirmaciones es verdadera;
+
+not, lo que da lo opuesto a la declaración.
+
+##Ejemplo 
+
+     Boolean Operators
+------------------------ 
+      AND
+  ------------------------
+
+*True and True is True
+
+*True and False is False
+
+*False and True is False
+
+*False and False is False
+
+      OR
+ ---------------------
+
+*True or True is True
+
+*True or False is True
+
+*False or True is True
+
+*False or False is False
+
+      NOT
+ -------------------
+
+*Not True is False
+
+*Not False is True
+
+"""
 
 
 
