@@ -456,7 +456,148 @@ elif that_might_be_true():
 else:
 
     print "None of the above."
+#Input
 
+nombre = raw_input("Cual es tu nombre?")
+
+print nombre
+
+#isalpha()
+
+valida solo el abecedario
+
+
+pyg = 'ay'
+
+original = raw_input('Enter a word:')
+
+if len(original) > 0 and original.isalpha():
+    word = original.lower()
+    first = word[0]
+    new_word = word + first + pyg
+    new_word = new_word[1: len(new_word)]
+    print new_word
+    print original
+else:
+    print 'empty'
+    
+    
+    
+#Function
+
+*Functions are defined with three components:*
+*1 The header, which includes the def keyword, the name of the function, and any parameters the function requires.*
+*def hello_world(): // There are no parameters
+
+*2 An optional comment that explains what the function does.*
+"""Prints 'Hello World!' to the console."""
+*3 The body, which describes the procedures the function carries out. The body is indented, just like for conditional statements.*
+
+print "Hello World!"
+
+
+
+*Example*
+
+Here's the full function pieced together:
+
+def hello_world():
+    """Prints 'Hello World!' to the console."""
+    print "Hello World!"
+    
+    
+    
+  def spam():
+    """This function print "Eggs"""
+    print("Eggs!")
+    
+# Llamando la fuction     
+    def square(n):
+    """Returns the square of a number."""
+    squared = n**2
+    print "%d squared is %d." % (n, squared)
+    return squared
+    
+# Call the square function on line 9! Make sure to
+# include the number 10 between the parentheses.
+square(10)
+
+
+
+#Parameters and Arguments
+
+def square(n):
+n is a parameter of square
+
+
+def power(base, exponent):  # Add your parameters here!
+    result = base**exponent
+    print "%d to the power of %d is %d." % (base, exponent, result)
+
+power(37,4)  # Add your arguments here!
+
+
+#Functions Calling Functions
+
+def fun_one(n):
+    return n * 5
+
+def fun_two(m):
+    return fun_one(m) + 7
+    
+    
+    
+def one_good_turn(n):
+    return n + 1
+    
+def deserves_another(n):
+    return one_good_turn(n) + 2
+
+
+
+
+
+
+
+
+
+import math # importa un modulo 
+
+print math.sqrt(25)
+
+##Importa solamente una fuction 
+
+from math import sqrt
+
+from module import function
+
+#Universal Imports
+
+from module import *
+
+from math import *
+
+#Improtar solamente lo necesario 
+
+import math            # Imports the math module
+everything = dir(math) # Sets everything to a list of things from math
+print everything       # Prints 'em all!
+
+def shut_down(s):
+    if (s =="yes"):
+        s = "Shutting down"
+    elif(s == "no"):
+        s = "Shutdown aborted"
+    else:
+        s ="Sorry"
+    return s
+    
+print shut_down("no")
+
+
+from math import sqrt
+
+print math.sqrt(13689)
 
 
 
