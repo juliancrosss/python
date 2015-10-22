@@ -203,107 +203,80 @@
 
 #La libreria datetime
 
-*from datetime import datetime
+    from datetime import datetime
 
 #Obteniendo la actual hora y dia
 
-*from datetime import datetime
-
-*now = datetime.now()
-
-*print now
+    from datetime import datetime
+    now = datetime.now()
+    print now
 
 #Extrayendo informacion
 
-*from datetime import datetime
-
-*now = datetime.now()
-
-*current_year = now.year
-
-*current_month = now.month
-
-*current_day = now.day
+    from datetime import datetime
+    now = datetime.now()
+    current_year = now.year
+    current_month = now.month
+    current_day = now.day
 
 *Segundo Ejemplo*
 
-from datetime import datetime
-
-now = datetime.now()
-
-print now
-
-print now.year
-
-print now.month
-
-print now.day
+    from datetime import datetime
+    now = datetime.now()
+    print now
+    print now.year
+    print now.month
+    print now.day
 
 #Imprimiendo Dia en formato legible 
 
-*from datetime import datetime
+    from datetime import datetime
+    now = datetime.now()
+    print '%s-%s-%s' % (now.year, now.month, now.day)
+    Resultado 2014-02-19*
 
-*now = datetime.now()
+*Ejemplo 2*
 
-*print '%s-%s-%s' % (now.year, now.month, now.day)
-
-*Resultado 2014-02-19*
-
-##Ejemplo 2
-
-from datetime import datetime
-
-now = datetime.now()
-
-print '%s/%s/%s' % (now.month, now.day, now.year)
+    from datetime import datetime
+    now = datetime.now()
+    print '%s/%s/%s' % (now.month, now.day, now.year)
 
 #Hora Grandiosa
 
-*from datetime import datetime
+    from datetime import datetime
+    now = datetime.now()
+    print now.hour
+    print now.minute
+    print now.second
 
-*now = datetime.now()
+*Segundo Ejemplo*
 
-*print now.hour
-
-*print now.minute
-
-*print now.second
-
-##Segundo Ejemplo
-
-*from datetime import datetime
-
-*now = datetime.now()
-
-*print '%s:%s:%s' % (now.hour, now.minute, now.second)
-
-*Resultado 5:48:57*
-
-*from datetime import datetime
-
-*now = datetime.now()
-
-*print '%s/%s/%s %s:%s:%s' % (now.month, now.day, now.year, now.hour, now.minute, now.second)
+    from datetime import datetime
+    now = datetime.now()
+    print '%s:%s:%s' % (now.hour, now.minute, now.second)
+    Resultado 5:48:57*
+    from datetime import datetime
+    now = datetime.now()
+    print '%s/%s/%s %s:%s:%s' % (now.month, now.day, now.year, now.hour, now.minute, now.second)
 
 #Condicionales y Control de Flujo
 
-*def clinic():
-    print "You've just entered the clinic!"
-    print "Do you take the door on the left or the right?"
-    answer = raw_input("Type left or right and hit 'Enter'.").lower()
-    if answer == "left" or answer == "l":
-        print "This is the Verbal Abuse Room, you heap of parrot droppings!"
-    elif answer == "right" or answer == "r":
-        print "Of course this is the Argument Room, I've told you that already!"
-    else:
-        print "You didn't pick left or right! Try again."
-        clinic()
-
-clinic()
+    def clinic():
+        print "You've just entered the clinic!"
+        print "Do you take the door on the left or the right?"
+        answer = raw_input("Type left or right and hit 'Enter'.").lower()
+        if answer == "left" or answer == "l":
+            print "This is the Verbal Abuse Room, you heap of parrot droppings!"
+        elif answer == "right" or answer == "r":
+            print "Of course this is the Argument Room, I've told you that already!"
+        else:
+            print "You didn't pick left or right! Try again."
+    clinic()
+    clinic()
 
 #Comparaciones
 
-##Hay seis comparaciones:
+*Hay seis comparaciones:*
 
 Igual  (==)
 
@@ -322,137 +295,109 @@ Mayor que o igual que (>=)
 
 ##Hay tres operadores booleanos:
 
-and, lo que comprueba si las dos afirmaciones son ciertas;
+and, lo que comprueba si las dos afirmaciones son ciertas
 
-or, lo que comprueba si al menos una de las afirmaciones es verdadera;
+or, lo que comprueba si al menos una de las afirmaciones es verdadera
 
 not, lo que da lo opuesto a la declaración.
 
 ##Ejemplo 
 
      Boolean Operators
------------------------- 
-      AND
-  ------------------------
-
-*True and True is True
-
-*True and False is False
-
-*False and True is False
-
-*False and False is False
-
-      OR
- ---------------------
-
-*True or True is True
-
-*True or False is True
-
-*False or True is True
-
-*False or False is False
-
-      NOT
- -------------------
-
-*Not True is False
-
-*Not False is True
+    ------------------------ 
+            AND
+    ------------------------
+    True and True is True
+    True and False is False
+    False and True is False
+    False and False is False
+            
+            OR
+    ---------------------
+    True or True is True
+    True or False is True
+    False or True is True
+    False or False is False
+        
+            NOT
+    -------------------
+    Not True is False
+    Not False is True
 
 #Orden de operaciones
 
 *Operadores booleanos no sólo se evalúan de izquierda a derecha. Al igual que con los operadores aritméticos, hay una orden de operaciones para los operadores booleanos:*
 
-*not* se evalúa primero;
-
-*and* se evalúa siguiente;
-
-*or* se evalúa como ultimo.
+    not* se evalúa primero;
+    and* se evalúa siguiente;
+    or* se evalúa como ultimo.
 
 #Conditional Statement Syntax
 
     if 8 < 9:*
-
-    *print "Eight is less than nine!"*
-
+        print "Eight is less than nine!"*
 
 #Else
 
-if 8 > 9:
-
-    print "I don't printed!"
-else:
-
-    print "I get printed!"
+    if 8 > 9:
+        print "I don't printed!"
+    else:
+        print "I get printed!"
     
 #Else if 
 
-if 8 > 9:
-
-    print "I don't get printed!"
-elif 8 < 9:
-
-    print "I get printed!"
-else:
-
-    print "I also don't get printed!"
+    if 8 > 9:
+        print "I don't get printed!"
+    elif 8 < 9:
+        print "I get printed!"
+    else:
+        print "I also don't get printed!"
     
-#Resumen
+##Resumen
 
-##Comparaciones
+*Comparaciones*
 
-3 < 4
-
-5 >= 5
-
-10 == 10
-
-12 != 13
+    3 < 4
+    5 >= 5
+    10 == 10
+    12 != 13
+    
 ##Boolean operaciones
 
-True or False 
-
-(3 < 4) and (5 >= 5)
-
-this() and not that()
+    True or False 
+    (3 < 4) and (5 >= 5)
+    this() and not that()
 
 ##Condicionales
 
-if this_might_be_true():
-
-    print "This really is true."
-elif that_might_be_true():
-
-    print "That is true."
-else:
-
-    print "None of the above."
+    if this_might_be_true():
+        print "This really is true."
+    elif that_might_be_true():
+        print "That is true."
+    else:
+        print "None of the above."
+        
 #Input
 
-nombre = raw_input("Cual es tu nombre?")
-
-print nombre
+    nombre = raw_input("Cual es tu nombre?")
+    print nombre
 
 #isalpha()
 
-valida solo el abecedario
+*valida solo el abecedario*
 
-
-pyg = 'ay'
-
-original = raw_input('Enter a word:')
-
-if len(original) > 0 and original.isalpha():
-    word = original.lower()
-    first = word[0]
-    new_word = word + first + pyg
-    new_word = new_word[1: len(new_word)]
-    print new_word
-    print original
-else:
-    print 'empty'
+    pyg = 'ay'
+    original = raw_input('Enter a word:')
+    
+    if len(original) > 0 and original.isalpha():
+        word = original.lower()
+        first = word[0]
+        new_word = word + first + pyg
+        new_word = new_word[1: len(new_word)]
+        print new_word
+        print original
+    else:
+        print 'empty'
     
     
     
@@ -460,117 +405,107 @@ else:
 
 *Functions are defined with three components:*
 *1 The header, which includes the def keyword, the name of the function, and any parameters the function requires.*
-*def hello_world(): // There are no parameters
+
+    def hello_world(): // There are no parameters
 
 *2 An optional comment that explains what the function does.*
-"""Prints 'Hello World!' to the console."""
+
+    """Prints 'Hello World!' to the console."""
+    
 *3 The body, which describes the procedures the function carries out. The body is indented, just like for conditional statements.*
 
-print "Hello World!"
-
-
+    print "Hello World!"
 
 *Example*
 
 Here's the full function pieced together:
 
-def hello_world():
-    """Prints 'Hello World!' to the console."""
-    print "Hello World!"
+    def hello_world():
+        """Prints 'Hello World!' to the console."""
+        print "Hello World!"
     
+    def spam():
+        """This function print "Eggs"""
+        print("Eggs!")
     
-    
-  def spam():
-    """This function print "Eggs"""
-    print("Eggs!")
-    
-# Llamando la fuction     
+# Llamando la fuction 
+
     def square(n):
-    """Returns the square of a number."""
-    squared = n**2
-    print "%d squared is %d." % (n, squared)
+        """Returns the square of a number."""
+        squared = n**2
+        print "%d squared is %d." % (n, squared)
     return squared
     
-# Call the square function on line 9! Make sure to
-# include the number 10 between the parentheses.
-square(10)
-
-
+    *Call the square function on line 9! Make sure to*
+    *include the number 10 between the parentheses.*
+    square(10)
 
 #Parameters and Arguments
 
-def square(n):
-n is a parameter of square
+    def square(n):
+        n is a parameter of square
 
 
-def power(base, exponent):  # Add your parameters here!
-    result = base**exponent
-    print "%d to the power of %d is %d." % (base, exponent, result)
+    def power(base, exponent):  # Add your parameters here!
+        result = base**exponent
+        print "%d to the power of %d is %d." % (base, exponent, result)
 
-power(37,4)  # Add your arguments here!
+    power(37,4)  # Add your arguments here!
 
 
 #Functions Calling Functions
 
-def fun_one(n):
-    return n * 5
+    def fun_one(n):
+        return n * 5
 
-def fun_two(m):
-    return fun_one(m) + 7
+    def fun_two(m):
+        return fun_one(m) + 7
     
     
     
-def one_good_turn(n):
-    return n + 1
+    def one_good_turn(n):
+        return n + 1
     
-def deserves_another(n):
-    return one_good_turn(n) + 2
+    def deserves_another(n):
+        return one_good_turn(n) + 2
 
 
 
 
+##import math # importa un modulo 
 
-
-
-
-
-import math # importa un modulo 
-
-print math.sqrt(25)
+    print math.sqrt(25)
 
 ##Importa solamente una fuction 
 
-from math import sqrt
-
-from module import function
+    from math import sqrt
+    from module import function
 
 #Universal Imports
 
-from module import *
-
-from math import *
+    from module import *
+    from math import *
 
 #Improtar solamente lo necesario 
 
-import math            # Imports the math module
-everything = dir(math) # Sets everything to a list of things from math
-print everything       # Prints 'em all!
+    import math            # Imports the math module
+    everything = dir(math) # Sets everything to a list of things from math
+    print everything       # Prints 'em all!
 
-def shut_down(s):
-    if (s =="yes"):
-        s = "Shutting down"
-    elif(s == "no"):
-        s = "Shutdown aborted"
-    else:
-        s ="Sorry"
+    def shut_down(s):
+        if (s =="yes"):
+            s = "Shutting down"
+        elif(s == "no"):
+            s = "Shutdown aborted"
+        else:
+            s ="Sorry"
     return s
     
-print shut_down("no")
+    print shut_down("no")
 
 
-from math import sqrt
-
-print math.sqrt(13689)
+    from math import sqrt
+    print math.sqrt(13689)
 
 
 
