@@ -1,50 +1,47 @@
 # python
 
-
 #Comienzo con Python 
-##imprimir con python 
-* print"Hola Mundo"
-* print "Monty Python"
+
+*imprimiendo con python*
+
+    print"Hola Mundo"
+    print "Monty Python"
 
 ##Imprimiendo Variables
 
-*the_machine_goes = "Ping!"
-
-*print the_machine_goes
+    the_machine_goes = "Ping!"
+    print the_machine_goes
 
 
 #Variables
-entero = 4
 
-float = 1.23
-
-string = "Julian"
-
-print(entero)
+    entero = 4
+    float = 1.23
+    string = "Julian"
+    print(entero)
 
 #Boleanos
-bool = True
 
-bool2 = Flase
+    bool = True
+    bool2 = Flase
 
 #Reasignacion
-int = 2
+   
+    int = 1
+    int = 2
 
 ##Reasignando
 
-int = 3
-
-print int
+    int = 3
+    print int
 
 #Identacion de bloques 
 
-|def numero()
-|
-|-- numero = 3
-|
-|-- return numero
+    def numero()
+      numero = 3
+    return numero
   
-print numero
+    print numero
 
 #Interpretacion
 
