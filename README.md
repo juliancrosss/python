@@ -508,7 +508,27 @@ Here's the full function pieced together:
     print math.sqrt(13689)
 
 
+##Cómo funciona la programación orientada a objetos
 
+*La programación orientada a objetos o POO (OOP según sus siglas en inglés) es un paradigma de programación que representa conceptos en una estructura denominada clase, que integra a las propiedades (datos) que describen al concepto, y a los procedimientos asociados, conocidos como métodos. Los objetos se crean a partir de las clases (Podemos considerar la clase “humano” que tiene ciertas características y un objeto una persona en particular como “David” que tiene nombre, edad, documento de identidad, altura; entre otras muchas cosas)*
+
+*En la programación orientada a objetos como conceptos principales podemos encontrar:*
+
+#Clase: 
+
+*definiciones de las propiedades y comportamiento de un tipo de objeto concreto. La instanciación es la lectura de estas definiciones y la creación de un objeto a partir de ella.*
+
+#Herencia: 
+
+*(Por ejemplo, herencia de la clase “humano” a la clase “empleado”) es la facilidad mediante la cual la clase “empleado” hereda en ella cada uno de los atributos y operaciones de “humano”, como si esos atributos y operaciones hubiesen sido definidos por la misma “empleado”. Por lo tanto, puede usar los mismos métodos y variables públicas declaradas en “humano”. Los componentes registrados como “privados” (private) también se heredan, pero como no pertenecen a la clase, se mantienen escondidos al programador y sólo pueden ser accedidos a través de otros métodos públicos.*
+
+#Objeto:
+
+*Es la instancia de una clase. Entidad provista de un conjunto de propiedades o atributos (datos) y de comportamiento o funcionalidad (métodos), los mismos que consecuentemente reaccionan a eventos.*
+
+#Método: 
+
+*Es la implementación de un algoritmo que representa una operación o función que un objeto realiza. El conjunto de los métodos de un objeto determinan el comportamiento del objeto.*
 
 
 
